@@ -1,0 +1,41 @@
+{
+  "name": "fastifyBabel",
+  "version": "0.0.1",
+  "description": "core backend for live",
+  "main": "dist/index.js",
+  "author": "Tayfun Gülcan ",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=production node dist/",
+    "test": "ava --verbose",
+    "dev": "nodemon src/ --exec \"node --require dotenv/config --require @babel/register\"",
+    "build": "babel src/ -d dist"
+  },
+  "ava": {
+    "files": [
+      "src/**/*.spec.js"
+    ],
+    "require": [
+      "dotenv/config",
+      "@babel/register"
+    ]
+  },
+  "devDependencies": {
+    "@babel/node": "^7.16.8",
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.0",
+    "ava": "^4.0.1",
+    "babel-plugin-root-import": "^6.6.0",
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "fastify": "^3.27.1",
+    "fastify-helmet": "^7.0.1",
+    "fastify-now": "^2.5.2",
+    "fastify-plugin": "^3.0.1"
+  }
+}

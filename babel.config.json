@@ -1,0 +1,37 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "esmodules": true
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "babel-plugin-root-import",
+      {
+        "paths": [
+          {
+            "rootPathPrefix": "$app/",
+            "rootPathSuffix": "src"
+          },
+          {
+            "rootPathPrefix": "$routes/",
+            "rootPathSuffix": "src/routes"
+          },
+          {
+            "rootPathPrefix": "$lib/",
+            "rootPathSuffix": "src/lib"
+          },
+          {
+            "rootPathPrefix": "$plugins/",
+            "rootPathSuffix": "src/plugins"
+          }
+        ]
+      }
+    ]
+  ]
+}
