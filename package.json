@@ -1,7 +1,11 @@
 {
-  "name": "fastifyBabel",
+  "name": "create-fastify-babel-app",
   "version": "0.0.1",
-  "description": "core backend for live",
+  "description": "fastify babeljs boilerplate",
+  "bin": {
+    "create-fastify-babel-app": "bin/createNodejsApp.js"
+  },
+  "repository": "https://github.com/tguelcan/fastify-babel.git",
   "main": "dist/index.js",
   "author": "Tayfun Gülcan ",
   "license": "MIT",
@@ -37,5 +41,23 @@
     "fastify-helmet": "^7.0.1",
     "fastify-now": "^2.5.2",
     "fastify-plugin": "^3.0.1"
-  }
+  },
+  "keywords": [
+    "node",
+    "node.js",
+    "boilerplate",
+    "generator",
+    "fastify",
+    "rest",
+    "api",
+    "babel",
+    "babeljs",
+    "es6",
+    "es7",
+    "es8",
+    "es9",
+    "ava",
+    "eslint",
+    "prettier"
+  ]
 }
